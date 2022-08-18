@@ -1,7 +1,7 @@
 ---
-name: "SpiceDB Test Server"
-description: "Sets up a running instance of `spicedb serve-testing` for integration tests"
-author: "authzed"
+name: "SpiceDB Version"
+description: "Gets the SpiceDB version"
+author: "costap"
 inputs:
   version:
     description: "version of SpiceDB to use"
