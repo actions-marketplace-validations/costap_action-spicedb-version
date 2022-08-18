@@ -7,6 +7,9 @@ inputs:
     description: "version of SpiceDB to use"
     required: false
     default: "latest"
+outputs:
+  version:
+    description: "the latest SpiceDB version"
 runs:
   using: "docker"
   image: "Dockerfile"
