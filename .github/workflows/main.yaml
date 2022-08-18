@@ -1,0 +1,19 @@
+on: [push]
+
+jobs:
+  spicedb:
+    runs-on: ubuntu-latest
+    name: A job to get spicedb version
+    steps:
+      # To use this repository's private action,
+      # you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: get spicedb version
+        uses: ./ # Uses an action in the root directory
+        id: check
+        with:
+          version: 'latest'
+      # Use the output from the `check` step
+      - name: test vesion
+        run: echo "The vesion was ${{ steps.check.outputs.version }}"
