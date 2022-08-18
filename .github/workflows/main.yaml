@@ -15,5 +15,5 @@ jobs:
         with:
           version: 'latest'
       # Use the output from the `check` step
-      - name: test vesion
-        run: echo "The vesion was ${{ steps.check.outputs.version }}"
+      - name: test version
+        run: echo "The version was ${{ steps.check.outputs.version }}"
