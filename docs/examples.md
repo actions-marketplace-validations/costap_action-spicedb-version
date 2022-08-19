@@ -42,7 +42,7 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         if: steps.check.outputs.version
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_PAT }}
           committer: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
           author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
           commit-message: Update SpiceDB to ${{ steps.check.outputs.version }}
